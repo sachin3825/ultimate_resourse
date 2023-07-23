@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  height: 100%;
+  gap: 20px;
+}
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rangeContainer {
+  display: flex;
+
+  gap: 20px;
+}
+
+.custom-input {
+  cursor: pointer;
+}
+.custom-input::-webkit-slider-thumb {
+  /* background-image: url("/circle.png"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  /* margin-top: -5px; */
+}

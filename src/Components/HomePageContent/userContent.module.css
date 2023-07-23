@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  background-color: var(--grey);
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  gap: 30px;
+}
+.profileImage {
+  object-fit: cover;
+}
+
+.profileImage img {
+  border-radius: 50%;
+  width: 60px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.Accountdetails {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.8rem;
+}
+
+.Accountdetails button {
+  width: max-content;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  border: none;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
+.recentTransaction {
+  line-height: 1.8rem;
+}
+
+.transation {
+  border-bottom: 1px solid rgb(197, 194, 194);
+  padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 20px;
+    align-items: center;
+  }
+
+  .profile h2 {
+    /* gap: 20px; */
+    font-size: xx-large;
+  }
+  .profileImage img {
+    width: 100px;
+  }
+
+  .Accountdetails {
+    width: 100%;
+    background-color: var(--grey);
+    padding: 30px;
+    gap: 20px;
+  }
+  .Accountdetails button {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    padding: 18px;
+  }
+  .accountdue {
+    display: flex;
+    justify-content: space-between;
+  }
+}
